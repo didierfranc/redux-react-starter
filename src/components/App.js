@@ -5,9 +5,7 @@ import Main from './Main'
 
 const mapStateToProps = state => state
 
-const mapDispatchToProps = dispatch => {
-  return bindActionCreators(actionCreators, dispatch)
-}
+const mapDispatchToProps = dispatch => bindActionCreators(actionCreators, dispatch)
 
 const App = connect(mapStateToProps, mapDispatchToProps)(Main)
 
