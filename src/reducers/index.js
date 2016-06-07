@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux'
 import { routerReducer } from 'react-router-redux'
 
-import loaded from './load'
+import data from './load'
 
 const rootReducer = combineReducers({
-  loaded,
+  data,
   routing: routerReducer
 })
 
