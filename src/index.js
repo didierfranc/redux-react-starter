@@ -13,7 +13,7 @@ const Index = () => (
   <Provider store={store}>
     <Router history={history}>
       <Route path="/" component={App} />
-      <Route path="somewhere" component={Somewhere} />
+      <Route path="/somewhere" component={Somewhere} />
     </Router>
   </Provider>
 )
