@@ -10,7 +10,7 @@ const Spinner = ({ load }) => (
 const List = (props) => (
   <div>
     <pre>{JSON.stringify(props.data, null, 2)}</pre>
-    <Link to="somewhere">Go somewhere</Link>
+    <Link to="/somewhere">Go somewhere</Link>
   </div>
 )
 
