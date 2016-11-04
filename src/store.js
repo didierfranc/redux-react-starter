@@ -6,7 +6,7 @@ import thunk from 'redux-thunk'
 import rootReducer from './reducers'
 
 const defaultState = {
-  data: {}
+  data: {},
 }
 
 export const store = createStore(rootReducer, defaultState,

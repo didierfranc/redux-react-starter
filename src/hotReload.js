@@ -12,9 +12,10 @@ render(
   rootEl
 )
 
+const NextApp = require('./').default
+
 if (module.hot) {
   module.hot.accept('./', () => {
-    const NextApp = require('./').default
     render(
       <AppContainer>
         <NextApp />
