@@ -8,6 +8,15 @@ module.exports = {
     path: resolve(__dirname, '../dist/assets'),
     filename: 'bundle.[hash].js',
   },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        include: [resolve(__dirname, '../src')],
+        use: 'babel-loader',
+      },
+    ],
+  },
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
@@ -21,13 +30,4 @@ module.exports = {
       template: 'webpack/template.html',
     }),
   ],
-  module: {
-    rules: [
-      {
-        test: /\.(js|jsx)$/,
-        include: [resolve(__dirname, '../src')],
-        use: 'babel-loader',
-      },
-    ],
-  },
 }

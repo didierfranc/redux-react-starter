@@ -1,5 +1,6 @@
 const { resolve } = require('path')
 const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: [
@@ -11,14 +12,14 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: resolve(__dirname),
-    publicPath: '/static',
+    publicPath: '/',
   },
   context: resolve(__dirname, '../src'),
   devtool: 'inline-source-map',
   devServer: {
     hot: true,
     contentBase: resolve(__dirname),
-    publicPath: '/static',
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -32,5 +33,9 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'redux-react-starter',
+      template: '../webpack/template.html',
+    }),
   ],
 }
