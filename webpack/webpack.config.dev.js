@@ -20,6 +20,7 @@ module.exports = {
     hot: true,
     contentBase: resolve(__dirname),
     publicPath: '/',
+    historyApiFallback: true,
   },
   module: {
     rules: [
