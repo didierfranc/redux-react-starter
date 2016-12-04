@@ -3,10 +3,22 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-  entry: [resolve(__dirname, '../src')],
+  entry: {
+    main: resolve(__dirname, '../src'),
+    vendor: [
+      'babel-polyfill',
+      'react',
+      'react-dom',
+      'react-redux',
+      'react-router',
+      'redux',
+      'redux-thunk',
+      'styled-components',
+    ],
+  },
   output: {
     path: resolve(__dirname, '../dist/assets'),
-    filename: 'bundle.[hash].js',
+    filename: '[name].[chunkhash].js',
   },
   module: {
     rules: [
@@ -24,6 +36,9 @@ module.exports = {
       },
     }),
     new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.CommonsChunkPlugin({
+      names: ['vendor', 'manifest'],
+    }),
     new HtmlWebpackPlugin({
       filename: '../index.html',
       title: 'redux-react-starter',

@@ -13,7 +13,7 @@ react-redux        5.0.0-rc.1
 react-router       4.0.0-alpha.6
 redux              3.6.0
 redux-thunk        2.1.0
-styled-components  1.0
+styled-components  1.0.10
 ```
 ```
 babel-core              6.18.0
