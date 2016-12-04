@@ -5,6 +5,7 @@
   "scripts": {
     "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js",
     "build": "webpack --config webpack/webpack.config.prod.js",
+    "prod": "cd dist && python -m SimpleHTTPServer 8000",
     "lint": "eslint src"
   },
   "repository": {
