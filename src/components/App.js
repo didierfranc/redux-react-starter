@@ -8,7 +8,7 @@ import * as actionCreators from '../actions'
 const url = 'https://raw.githubusercontent.com/didierfranc/react-async-starter/master/package.json'
 
 const LoadMe = ({ load }) => (
-  <button href={null} onClick={() => load(url)}>Load</button>
+  <button onClick={() => load(url)}>Load</button>
 )
 
 const List = props => (
