@@ -1,6 +1,6 @@
-# react-async-starter
+# redux-react-starter
 
-This repository contains the minimal app to get started with `redux`, `react`, `hot-reloading` `async function` and other great stuffs.
+This repository contains the minimal app to get started with `redux`, `react`, `hot-reloading`, `async function` and other great stuffs.
 
 ## What's inside ?
 
@@ -15,9 +15,6 @@ redux              3.6.0
 redux-thunk        2.1.0
 styled-components  1.0
 ```
-
-#### devDependencies
-
 ```
 babel-core              6.18.0
 babel-eslint            7.0.0
@@ -39,4 +36,4 @@ webpack-dev-server      2.1.0-beta.12
 
 ## Create-React-App
 
-If you don't care about the process and don't want to play with your config try [create-react-app](https://github.com/facebookincubator/create-react-app)
+If you don't care about the process or you don't want to play with your config try [create-react-app](https://github.com/facebookincubator/create-react-app)

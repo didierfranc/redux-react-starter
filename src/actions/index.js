@@ -2,7 +2,7 @@ import { actionTypes as types } from '../constants'
 
 const get = u => fetch(u).then(r => r.json())
 
-export const load = url => async(dispatch) => {
+export const load = url => async (dispatch) => {
   dispatch({ type: types.LOAD_DATA })
   try {
     const data = await get(url)
