@@ -1,10 +1,14 @@
 import React from 'react'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
 import { Link } from 'react-router'
+
+import * as actionCreators from '../actions'
 
 const url = 'https://raw.githubusercontent.com/didierfranc/react-async-starter/master/package.json'
 
 const LoadMe = ({ load }) => (
-  <a href={null} onClick={() => load(url)}>Load Me</a>
+  <button href={null} onClick={() => load(url)}>Load</button>
 )
 
 const List = props => (
@@ -34,4 +38,7 @@ LoadMe.propTypes = {
   load: React.PropTypes.func,
 }
 
-export default Main
+const mapStateToProps = state => state
+const mapDispatchToProps = dispatch => bindActionCreators(actionCreators, dispatch)
+
+export default connect(mapStateToProps, mapDispatchToProps)(Main)

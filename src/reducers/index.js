@@ -5,7 +5,7 @@ import data from './load'
 
 const rootReducer = combineReducers({
   data,
-  routing: routerReducer
+  routing: routerReducer,
 })
 
 export default rootReducer

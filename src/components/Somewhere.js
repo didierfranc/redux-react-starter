@@ -3,7 +3,7 @@ import { Link } from 'react-router'
 
 const Somewhere = () => (
   <div>
-    <p>Somewhere !</p>
+    <p>Somewhere over</p>
     <Link to="/">Go back to root</Link>
   </div>
 )

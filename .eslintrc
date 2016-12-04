@@ -2,16 +2,9 @@
   "env": {
     "browser": true,
   },
-  "parser": "babel-eslint",
   "extends": "airbnb",
-  "parserOptions": {
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true,
-    }
-  },
-  "plugins": ["babel"],
   "rules": {
-    "semi": ["error", "never"],
+    "semi": [1, "never"],
     "no-underscore-dangle": 0,
     "import/prefer-default-export": 0,
     "import/no-extraneous-dependencies": 0,
