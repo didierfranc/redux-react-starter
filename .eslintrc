@@ -6,6 +6,7 @@
   "rules": {
     "semi": [1, "never"],
     "no-underscore-dangle": 0,
+    "no-confusing-arrow": 0,
     "import/prefer-default-export": 0,
     "import/no-extraneous-dependencies": 0,
     "jsx-a11y/no-static-element-interactions": 0,

@@ -49,6 +49,6 @@
     "react-router": "^4.0.0-alpha.6",
     "redux": "^3.5.2",
     "redux-thunk": "^2.1.0",
-    "styled-components": "^1.0.10"
+    "styled-components": "^1.1.2"
   }
 }

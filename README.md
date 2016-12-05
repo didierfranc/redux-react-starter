@@ -1,3 +1,5 @@
+### [Live](https://redux-react-starter.surge.sh)
+
 # redux-react-starter
 
 This repository contains the minimal app to get started with `redux`, `react`, `hot-reloading`, `async function` and other great stuffs.
@@ -33,6 +35,10 @@ react-hot-loader        3.0.0-beta.6
 webpack                 2.1.0-beta.27
 webpack-dev-server      2.1.0-beta.12
 ```
+
+## Tools
+
+If you have not already done so, move to **Chrome** and install [react-developer-tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) & [redux-devtools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
 
 ## Create-React-App
 
