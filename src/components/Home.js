@@ -4,13 +4,10 @@ import { connect } from 'react-redux'
 
 import * as actionCreators from '../actions'
 
-import { Title, Button, Readme, LinkTo, Body } from './Styled'
-import Github from './Github'
+import { Button, Readme, LinkTo } from './Styled'
 
 const Home = ({ state, actions }) => (
-  <Body>
-    <Title>redux-react-starter</Title>
-    <Github />
+  <div>
     <Button
       onClick={actions.loadReadme}
       disabled={state.readme.text}
@@ -21,7 +18,7 @@ const Home = ({ state, actions }) => (
     <div>
       <LinkTo to="somewhere">Go somewhere</LinkTo>
     </div>
-  </Body>
+  </div>
 )
 
 Home.propTypes = {

@@ -1,11 +1,11 @@
 import React from 'react'
-import { Title, LinkTo, Body } from './Styled'
+import { Title, LinkTo } from './Styled'
 
 const Somewhere = () => (
-  <Body>
+  <div>
     <Title>Somewhere</Title>
     <LinkTo to="/">Go back</LinkTo>
-  </Body>
+  </div>
 )
 
 export default Somewhere
