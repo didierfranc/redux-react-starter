@@ -5,17 +5,19 @@ import { connect } from 'react-redux'
 import * as actionCreators from '../actions'
 
 import { Title, Button, Readme, LinkTo, Body } from './Styled'
+import Github from './Github'
 
 const Home = ({ state, actions }) => (
   <Body>
     <Title>redux-react-starter</Title>
+    <Github />
     <Button
       onClick={actions.loadReadme}
       disabled={state.readme.text}
     >
-      Load - README.md
+      Load README.md
     </Button>
-    {state.readme.text && <Readme>{state.readme.text}</Readme>}
+    <Readme>{state.readme.text}</Readme>
     <div>
       <LinkTo to="somewhere">Go somewhere</LinkTo>
     </div>

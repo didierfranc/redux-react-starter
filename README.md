@@ -1,4 +1,4 @@
-### [Live](https://redux-react-starter.surge.sh)
+### [Live](https://redux-react.surge.sh)
 
 # redux-react-starter
 

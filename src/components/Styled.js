@@ -8,7 +8,7 @@ export const Body = styled.div`
 export const Title = styled.h1`
   font-family: sans-serif;
   font-weight: 100;
-  margin: 80px 30px 30px 30px;
+  margin: 60px 30px 20px 30px;
 `
 
 export const LinkTo = styled(Link)`
@@ -22,6 +22,7 @@ export const Button = styled.button`
   background: rgb(126, 87, 194);
   color: white;
   outline: none;
+  margin-top: 60px;
   padding: 10px 15px;
   border-radius: 4px;
   font-size: 14px;
@@ -30,6 +31,36 @@ export const Button = styled.button`
   &:hover {
     background: rgb(149, 117, 205);
   }
+`
+
+const Github = styled.span`
+  vertical-align: middle;
+  padding: 7px 8px;
+  background: rgb(250, 250, 250);
+  border: 1px solid lightgrey;
+  font-size: 14px;
+  font-weight: 400;
+  outline: none;
+  font-family: sans-serif;
+`
+
+export const GithubButton = styled(Github)`
+  border-radius: 5px 0 0 5px;
+  &:hover {
+    background: rgb(238, 238, 238);
+  }
+`
+
+export const GithubCount = styled(Github)`
+  margin-left: -1px;
+  border-radius: 0 5px 5px 0;
+  width: 100px
+`
+
+export const GithubLink = styled.a`
+  display: block;
+  text-decoration: none;
+  color: black;
 `
 
 export const Readme = styled.pre`
@@ -45,6 +76,8 @@ export const Readme = styled.pre`
   border-radius: 3px;
   overflow: scroll;
   width: 800px;
+  max-width: 90%;
   height: 500px;
+  max-height: 50vh;
   margin: 50px auto 10px auto;
 `
