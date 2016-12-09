@@ -1,15 +1,12 @@
 import React from 'react'
-import { bindActionCreators as bind } from 'redux'
 import { connect } from 'react-redux'
-
-import * as actionCreators from '../actions'
-
+import { loadReadme } from '../actions'
 import { Button, Readme, LinkTo } from './Styled'
 
-const Home = ({ state, actions }) => (
+const Home = ({ state, loadReadme }) => (
   <div>
     <Button
-      onClick={actions.loadReadme}
+      onClick={loadReadme}
       disabled={state.readme.text}
     >
       Load README.md
@@ -28,12 +25,8 @@ Home.propTypes = {
       error: React.PropTypes.bool,
     }),
   }),
-  actions: React.PropTypes.shape({
-    loadReadme: React.PropTypes.func,
-  }),
+  loadReadme: React.PropTypes.func,
 }
 
 const mapStateToProps = state => ({ state: { readme: state.readme } })
-const mapDispatchToProps = dispatch => ({ actions: bind(actionCreators, dispatch) })
-
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(mapStateToProps, { loadReadme })(Home)
