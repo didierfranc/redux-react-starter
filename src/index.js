@@ -25,4 +25,4 @@ export const Root = () => (
   </Provider>
 )
 
-render(<Root />, document.querySelector('react'))
+if (!module.hot) render(<Root />, document.querySelector('react'))
