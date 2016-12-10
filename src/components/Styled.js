@@ -22,7 +22,7 @@ export const Button = styled.button`
   background: rgb(126, 87, 194);
   color: white;
   outline: none;
-  margin-top: 60px;
+  margin-top: 70px;
   padding: 10px 15px;
   border-radius: 4px;
   font-size: 14px;
@@ -35,9 +35,8 @@ export const Button = styled.button`
 
 const Github = styled.span`
   vertical-align: middle;
-  padding: 7px 8px;
-  background: rgb(250, 250, 250);
-  border: 1px solid lightgrey;
+  padding: 6px 10px;
+  border: 1px solid rgb(213, 213, 213);
   font-size: 14px;
   font-weight: 400;
   outline: none;
@@ -45,7 +44,8 @@ const Github = styled.span`
 `
 
 export const GithubButton = styled(Github)`
-  border-radius: 5px 0 0 5px;
+  border-radius: 3px 0 0 3px;
+  background: rgb(248, 248, 248);
   &:hover {
     background: rgb(238, 238, 238);
   }
@@ -53,7 +53,7 @@ export const GithubButton = styled(Github)`
 
 export const GithubCount = styled(Github)`
   margin-left: -1px;
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 3px 3px 0;
   width: 100px
 `
 

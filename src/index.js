@@ -9,7 +9,6 @@ import { store } from './store'
 
 import Home from './components/Home'
 import Somewhere from './components/Somewhere'
-
 import Header from './components/Header'
 import { Body } from './components/Styled'
 
