@@ -2,7 +2,44 @@
 
 # redux-react-starter
 
-This repository contains the minimal app to get started with `redux`, `react`, `hot-reloading`, `async function` and other great stuffs.
+This repository contains the minimal app to get started with `redux`, `react`, `hot-reloading`, `async function` and some other great stuffs.
+
+## How to
+
+[yarn](https://github.com/yarnpkg/yarn) 0.18+ must be present on your machine.
+
+### Start
+
+Run webpack-dev-server, get ready to code with hot reloading
+```
+yarn start
+```
+
+### Build
+Bundle your app. It will create `index.html`, `main.[hash].js`, `vendor.[hash].js` and `manifest.[hash].js`.
+```
+yarn build
+```
+
+### Run your build
+```
+yarn prod
+```
+
+### Deploy
+
+#### [Surge.sh](http://surge.sh)
+```
+surge ./dist -d subdomain.surge.sh
+```
+
+#### [Github Pages](https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/)
+```
+mv dist docs
+git push upstream master
+```
+
+Then go to your repository, Settings -> Options -> Github Pages and select /docs folder
 
 ## What's inside ?
 
