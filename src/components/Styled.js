@@ -11,28 +11,6 @@ export const Title = styled.h1`
   margin: 60px 30px 20px 30px;
 `
 
-export const LinkTo = styled(Link)`
-  line-height: 100px;
-  font-family: sans-serif;
-  color: rgb(126, 87, 194);
-`
-
-export const Button = styled.button`
-  border: none;
-  background: rgb(126, 87, 194);
-  color: white;
-  outline: none;
-  margin-top: 70px;
-  padding: 10px 15px;
-  border-radius: 4px;
-  font-size: 14px;
-  cursor: pointer;
-  pointer-events: ${props => props.disabled ? 'none' : 'auto'};
-  &:hover {
-    background: rgb(149, 117, 205);
-  }
-`
-
 const Github = styled.span`
   vertical-align: middle;
   padding: 6px 10px;
@@ -63,21 +41,63 @@ export const GithubLink = styled.a`
   color: black;
 `
 
-export const Readme = styled.pre`
-  font-family: monospace;
-  font-size: 12px;
+export const Message = styled.h2`
+  font-family: sans-serif;
   font-weight: 100;
-  letter-spacing: 1px;
-  background: rgb(34, 34, 34);
-  color: lightgrey;
-  text-align: left;
-  padding: 10px;
-  box-sizing: border-box;
+  margin-top: 30vh
+`
+
+export const Blue = styled.span`
+  color: rgb(0, 128, 255)
+`
+
+export const FormTitle = styled.h1`
+  font-family: sans-serif;
+  font-weight: 100;
+  margin-top: 20vh;
+  margin-bottom: 50px;
+`
+
+export const TextField = styled.input`
+  display: block;
+  height: 42px;
+  width: 300px;
+  margin: 10px auto;
+  padding: 0 12px;
   border-radius: 3px;
-  overflow: scroll;
-  width: 800px;
-  max-width: 90%;
-  height: 500px;
-  max-height: 50vh;
-  margin: 50px auto 10px auto;
+  border: 1px solid lightgrey;
+  outline: none;
+  font-size: 17px;
+  box-sizing: border-box;
+  &:focus {
+    border-color: rgb(0, 128, 255);
+  }
+  &:-webkit-autofill {
+    background: blue;
+  }
+`
+
+export const Submit = styled.input`
+  border: none;
+  color: rgb(0, 128, 255);
+  font-size: 24px;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 30px;
+`
+
+export const FooterLink = styled(Link)`
+  position: fixed;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 100;
+  text-decoration: none;
+  color: rgb(10, 10, 10);
+  &:hover {
+    color: rgb(0, 0, 0);
+  }
 `

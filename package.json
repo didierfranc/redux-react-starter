@@ -46,6 +46,7 @@
     "babel-polyfill": "^6.20.0",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
+    "react-event-debounce": "^4.0.9",
     "react-redux": "^5.0.1",
     "react-router": "^4.0.0-alpha.6",
     "redux": "^3.5.2",

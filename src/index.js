@@ -8,7 +8,8 @@ import { BrowserRouter, Match } from 'react-router'
 import { store } from './store'
 
 import Home from './components/Home'
-import Somewhere from './components/Somewhere'
+import Signup from './components/Signup'
+import Login from './components/Login'
 import Header from './components/Header'
 import { Body } from './components/Styled'
 
@@ -18,7 +19,8 @@ export const Root = () => (
       <Body>
         <Header />
         <Match exactly pattern="/" component={Home} />
-        <Match exactly pattern="/somewhere" component={Somewhere} />
+        <Match exactly pattern="/signup" component={Signup} />
+        <Match exactly pattern="/login" component={Login} />
       </Body>
     </BrowserRouter>
   </Provider>

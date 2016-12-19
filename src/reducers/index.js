@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
 
-import readme from './readme'
+import user from './user'
 
 const rootReducer = combineReducers({
-  readme,
+  user,
 })
 
 export default rootReducer

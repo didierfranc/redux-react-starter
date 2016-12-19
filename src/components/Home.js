@@ -1,30 +1,16 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { loadReadme } from '../actions'
-import { Button, Readme, LinkTo } from './Styled'
+import { Redirect } from 'react-router'
+import { Message, Blue } from './Styled'
 
-const Home = ({ readme, loadReadme }) => (
-  <div>
-    <Button
-      onClick={loadReadme}
-      disabled={readme.text}
-    >
-      Load README.md
-    </Button>
-    <Readme>{readme.text}</Readme>
-    <div>
-      <LinkTo to="somewhere">Go somewhere</LinkTo>
-    </div>
-  </div>
+const Home = ({ user }) => (
+  user.token
+    ? <Message>{'You\'re logged in as '}<Blue>{user.email}</Blue></Message>
+    : <Redirect to="/login" />
 )
 
 Home.propTypes = {
-  readme: React.PropTypes.shape({
-    text: React.PropTypes.string,
-    error: React.PropTypes.bool,
-  }),
-  loadReadme: React.PropTypes.func,
+  user: React.PropTypes.shape({}),
 }
 
-const mapStateToProps = state => ({ readme: state.readme })
-export default connect(mapStateToProps, { loadReadme })(Home)
+export default connect(state => ({ user: state.user }))(Home)
