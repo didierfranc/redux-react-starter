@@ -7,7 +7,8 @@
     "build": "rm -rf dist && webpack --config webpack/webpack.config.prod.js",
     "prod": "cd dist && python -m SimpleHTTPServer 8080",
     "lint": "eslint src",
-    "ngrok": "ngrok http -region eu 8080"
+    "ngrok": "ngrok http -region eu 8080",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
   "devDependencies": {
     "babel-core": "^6.20.0",
     "babel-eslint": "^7.0.0",
+    "babel-jest": "^18.0.0",
     "babel-loader": "^6.2.9",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.16.0",
@@ -38,7 +40,10 @@
     "eslint-plugin-jsx-a11y": "^2.2.3",
     "eslint-plugin-react": "^6.8.0",
     "html-webpack-plugin": "^2.24.1",
+    "jest": "^18.0.0",
+    "node-fetch": "^1.6.3",
     "react-hot-loader": "^3.0.0-beta.6",
+    "react-test-renderer": "^15.4.1",
     "webpack": "2.1.0-beta.27",
     "webpack-dev-server": "2.1.0-beta.12"
   },

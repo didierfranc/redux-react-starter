@@ -1,0 +1,27 @@
+exports[`test Properly render Github component 1`] = `
+<a
+  className="fqGhMB"
+  href="http://github.com/didierfranc/redux-react-starter"
+  target="_blank">
+  <span
+    className="fGNCqT">
+    <svg
+      height="16"
+      style={
+        Object {
+          "position": "relative",
+          "top": 3,
+        }
+      }
+      width="14">
+      <path
+        d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z" />
+    </svg>
+     Star
+  </span>
+  <span
+    className="jzeXcL">
+    0
+  </span>
+</a>
+`;
