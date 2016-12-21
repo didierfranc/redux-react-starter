@@ -8,7 +8,7 @@ const auth = (state = initialState, action) => {
   switch (action.type) {
     case 'SIGNUP_SUCCESS':
     case 'LOGIN_SUCCESS':
-      storeToken(action.user.token); return action.user
+      storeToken(action.data.token); return action.data
     case 'LOGIN_FAILURE':
       clearToken(); return {}
     default:
