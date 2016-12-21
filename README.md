@@ -1,4 +1,4 @@
-### [Live](https://redux-react.surge.sh)
+### [Live](http://redux-react-starter.herokuapp.com/)
 
 # redux-react-starter
 
@@ -15,8 +15,16 @@ Run webpack-dev-server, get ready to code with hot reloading
 yarn start
 ```
 
+## Share
+
+Share your localhost running app to anyone with an internet connection
+```
+yarn ngrok
+```
+
 ### Build
-Bundle your app. It will create `index.html`, `main.[hash].js`, `vendor.[hash].js` and `manifest.[hash].js`.
+
+Bundle your app. It will create `index.html`, `main.[hash].js`, `vendor.[hash].js` and `manifest.[hash].js`
 ```
 yarn build
 ```
