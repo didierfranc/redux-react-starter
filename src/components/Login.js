@@ -2,7 +2,8 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router'
 import { login } from '../actions'
-import { TextField, FormTitle, Submit, FooterLink } from './Styled'
+import { FormTitle, FooterLink } from './Styled'
+import Form from './Form'
 
 const Login = ({ user, login }) => {
   const handleSubmit = (e) => {
@@ -14,11 +15,7 @@ const Login = ({ user, login }) => {
   return (
     <div>
       <FormTitle>Login</FormTitle>
-      <form onSubmit={handleSubmit}>
-        <TextField type="email" name="email" placeholder="Email address" />
-        <TextField type="password" name="password" placeholder="Password" />
-        <Submit type="submit" value="Continue" />
-      </form>
+      <Form onSubmit={handleSubmit} />
       <FooterLink to="/signup">{'You don\'t have an account ?'}</FooterLink>
       {user.token && <Redirect to="/" />}
     </div>
