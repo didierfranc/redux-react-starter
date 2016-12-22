@@ -6,15 +6,16 @@ module.exports = {
   entry: {
     main: resolve(__dirname, '../src'),
     vendor: [
-      'babel-polyfill',
-      'react',
-      'react-dom',
       'react-redux',
       'react-router',
       'redux',
       'redux-thunk',
       'styled-components',
     ],
+  },
+  externals: {
+    react: 'React',
+    'react-dom': 'ReactDOM',
   },
   output: {
     path: resolve(__dirname, '../dist/assets'),

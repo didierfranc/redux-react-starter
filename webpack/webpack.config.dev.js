@@ -40,4 +40,5 @@ module.exports = {
       template: '../webpack/template.html',
     }),
   ],
+  performance: { hints: false },
 }
