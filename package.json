@@ -4,7 +4,7 @@
   "description": "Get started with ES2015, React and Redux. Including Webpack, ESLint, react-router, fetch ...",
   "scripts": {
     "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js",
-    "build": "rm -rf dist && webpack --config webpack/webpack.config.prod.js",
+    "build": "rm -rf dist && webpack --config webpack/webpack.config.prod.js  && cp -a assets/ dist/",
     "prod": "cd dist && python -m SimpleHTTPServer 8080",
     "lint": "eslint src",
     "ngrok": "ngrok http -region eu 8080",
@@ -51,6 +51,7 @@
     "webpack-dev-server": "2.2.0-rc.0"
   },
   "dependencies": {
+    "offline-plugin": "^4.5.3",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-redux": "^5.0.1",

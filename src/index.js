@@ -1,3 +1,4 @@
+import Offline from 'offline-plugin/runtime'
 import React from 'react'
 import { Provider } from 'react-redux'
 import { render } from 'react-dom'
@@ -10,6 +11,8 @@ import Signup from './components/Signup'
 import Login from './components/Login'
 import Header from './components/Header'
 import { Body } from './components/Styled'
+
+Offline.install()
 
 export const Root = () => (
   <Provider store={store}>

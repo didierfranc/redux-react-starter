@@ -1,6 +1,7 @@
 const { resolve } = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const OfflinePlugin = require('offline-plugin')
 
 module.exports = {
   entry: {
@@ -18,8 +19,9 @@ module.exports = {
     'react-dom': 'ReactDOM',
   },
   output: {
-    path: resolve(__dirname, '../dist/assets'),
     filename: '[name].[chunkhash].js',
+    path: resolve(__dirname, '../dist'),
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -41,9 +43,15 @@ module.exports = {
       names: ['vendor', 'manifest'],
     }),
     new HtmlWebpackPlugin({
-      filename: '../index.html',
+      filename: 'index.html',
       title: 'redux-react-starter',
       template: 'webpack/template.html',
+    }),
+    new OfflinePlugin({
+      ServiceWorker: {
+        navigateFallbackURL: '/',
+      },
+      AppCache: false,
     }),
   ],
 }
