@@ -1,4 +1,4 @@
-### [Live](http://redux-react-starter.herokuapp.com/)
+### [Live](https://react.didierfranc.com/)
 
 # redux-react-starter
 
