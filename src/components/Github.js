@@ -16,6 +16,7 @@ class Github extends React.Component {
     <GithubLink
       href="http://github.com/didierfranc/redux-react-starter"
       target="_blank"
+      rel="noopener"
     >
       <GithubButton><Star /> Star</GithubButton>
       <GithubCount>{this.state.count}</GithubCount>

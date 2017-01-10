@@ -2,6 +2,7 @@ exports[`test Properly render Github component 1`] = `
 <a
   className="fqGhMB"
   href="http://github.com/didierfranc/redux-react-starter"
+  rel="noopener"
   target="_blank">
   <span
     className="fGNCqT">

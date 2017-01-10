@@ -3,9 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title><%= htmlWebpackPlugin.options.title %></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="React">
+    <meta name="apple-mobile-web-app-title" content="React">
+    <meta name="theme-color" content="#0080FF">
+    <meta name="msapplication-navbutton-color" content="#0080FF">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-starturl" content="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" sizes="192x192" href="icon.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="icon.png">
   </head>
   <body>
+    <noscript>
+      <a href="http://enable-javascript.com/">Javascript must me enabled to use this site.</a>
+    </noscript>
     <react />
     <script src="https://unpkg.com/react@15/dist/react.min.js"></script>
     <script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
