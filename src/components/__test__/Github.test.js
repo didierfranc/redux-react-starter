@@ -1,5 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
+
 import Github from '../Github'
 
 global.fetch = jest.fn(() => new Promise((resolve) => {

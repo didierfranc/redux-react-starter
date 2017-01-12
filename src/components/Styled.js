@@ -77,9 +77,6 @@ export const TextField = styled.input`
   &:focus {
     border-color: rgb(0, 128, 255);
   }
-  &:-webkit-autofill {
-    background: blue;
-  }
 `
 
 export const Submit = styled.input`

@@ -19,7 +19,7 @@ module.exports = {
   devServer: {
     hot: true,
     host: '0.0.0.0',
-    contentBase: resolve(__dirname),
+    contentBase: resolve(__dirname, '../assets'),
     publicPath: '/',
     historyApiFallback: true,
   },

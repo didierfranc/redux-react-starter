@@ -1,7 +1,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router'
+
 import { login } from '../actions'
+
 import { FormTitle, FooterLink } from './Styled'
 import Form from './Form'
 
@@ -23,8 +25,8 @@ const Login = ({ user, login }) => {
 }
 
 Login.propTypes = {
-  user: React.PropTypes.shape({}),
-  login: React.PropTypes.func,
+  user: React.PropTypes.shape({}).isRequired,
+  login: React.PropTypes.func.isRequired,
 }
 
 const mapStateToProps = state => ({ user: state.user })

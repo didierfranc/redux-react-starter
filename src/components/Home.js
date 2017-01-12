@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router'
+
 import { Message, Blue } from './Styled'
 
 const Home = ({ user }) => (
@@ -10,7 +11,7 @@ const Home = ({ user }) => (
 )
 
 Home.propTypes = {
-  user: React.PropTypes.shape({}),
+  user: React.PropTypes.shape({}).isRequired,
 }
 
 export default connect(state => ({ user: state.user }))(Home)

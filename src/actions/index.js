@@ -25,7 +25,10 @@ export const login = ({ email, password }) => (dispatch) => {
 
 export const loginWithToken = () => (dispatch) => {
   const token = getToken()
-  if (!token) return
+  if (!token) {
+    dispatch({ type: types.LOGIN_FAILURE })
+    return
+  }
 
   dispatch({ type: types.LOGIN_REQUEST })
   post({
