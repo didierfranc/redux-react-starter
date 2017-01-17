@@ -46,12 +46,12 @@
     "jest": "^18.0.0",
     "react-hot-loader": "^3.0.0-beta.6",
     "react-test-renderer": "^15.4.1",
-    "webpack": "2.2.0-rc.4",
+    "webpack": "2.2.0",
     "webpack-dev-server": "2.2.0-rc.0"
   },
   "dependencies": {
     "lodash": "^4.17.4",
-    "offline-plugin": "^4.5.3",
+    "offline-plugin": "^4.5.5",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-redux": "^5.0.1",
