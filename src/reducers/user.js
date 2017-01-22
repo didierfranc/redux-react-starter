@@ -1,4 +1,5 @@
 import { getToken, storeToken, clearToken } from '../helpers'
+import { actionTypes as types } from '../constants'
 
 const initialState = {
   token: getToken(),
@@ -6,11 +7,11 @@ const initialState = {
 
 const auth = (state = initialState, action) => {
   switch (action.type) {
-    case 'SIGNUP_SUCCESS':
-    case 'LOGIN_SUCCESS':
+    case types.SIGNUP_SUCCESS:
+    case types.LOGIN_SUCCESS:
       storeToken(action.data.token)
       return action.data
-    case 'LOGIN_FAILURE':
+    case types.LOGIN_FAILURE:
       clearToken()
       return {}
     default:
