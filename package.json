@@ -5,7 +5,7 @@
   "scripts": {
     "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js",
     "build": "rm -rf dist && webpack --config webpack/webpack.config.prod.js  && cp -a assets/ dist/",
-    "prod": "cd dist && python -m SimpleHTTPServer 8080",
+    "prod": "serve ./dist -s",
     "lint": "eslint src",
     "ngrok": "ngrok http -region eu 8080",
     "test": "jest"
@@ -36,7 +36,7 @@
     "babel-preset-react": "^6.22.0",
     "babel-preset-stage-0": "^6.22.0",
     "babel-runtime": "^6.22.0",
-    "eslint": "^3.14.0",
+    "eslint": "^3.14.1",
     "eslint-config-airbnb": "^14.0.0",
     "eslint-plugin-babel": "^4.0.1",
     "eslint-plugin-import": "^2.2.0",
@@ -46,6 +46,7 @@
     "jest": "^18.0.0",
     "react-hot-loader": "^3.0.0-beta.6",
     "react-test-renderer": "^15.4.1",
+    "serve": "^3.2.2",
     "webpack": "2.2.0",
     "webpack-dev-server": "2.2.0-rc.0"
   },
@@ -54,10 +55,10 @@
     "offline-plugin": "^4.5.5",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
-    "react-redux": "^5.0.1",
+    "react-redux": "^5.0.2",
     "react-router": "^4.0.0-alpha.6",
     "redux": "^3.5.2",
     "redux-thunk": "^2.2.0",
-    "styled-components": "^1.3.1"
+    "styled-components": "^1.4.2"
   }
 }

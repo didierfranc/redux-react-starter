@@ -7,16 +7,14 @@ module.exports = {
   entry: {
     main: resolve(__dirname, '../src'),
     vendor: [
+      'react',
+      'react-dom',
       'react-redux',
       'react-router',
       'redux',
       'redux-thunk',
       'styled-components',
     ],
-  },
-  externals: {
-    react: 'React',
-    'react-dom': 'ReactDOM',
   },
   output: {
     filename: '[name].[chunkhash].js',

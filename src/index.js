@@ -12,7 +12,7 @@ import Login from './components/Login'
 import Header from './components/Header'
 import { Body } from './components/Styled'
 
-Offline.install()
+if (process.env.NODE_ENV === 'production') Offline.install()
 
 export const Root = () => (
   <Provider store={store}>
