@@ -1,6 +1,6 @@
 {
   "name": "redux-react-starter",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Get started with ES2015, React and Redux. Including Webpack, ESLint, react-router, fetch ...",
   "scripts": {
     "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js",
