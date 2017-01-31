@@ -2,7 +2,7 @@ import Offline from 'offline-plugin/runtime'
 import React from 'react'
 import { Provider } from 'react-redux'
 import { render } from 'react-dom'
-import { BrowserRouter, Match } from 'react-router'
+import { BrowserRouter, Route } from 'react-router-dom'
 
 import { store } from './store'
 
@@ -19,9 +19,9 @@ export const Root = () => (
     <BrowserRouter>
       <Body>
         <Header />
-        <Match exactly pattern="/" component={Home} />
-        <Match exactly pattern="/signup" component={Signup} />
-        <Match exactly pattern="/login" component={Login} />
+        <Route path="/" component={Home} />
+        <Route path="/signup" component={Signup} />
+        <Route path="/login" component={Login} />
       </Body>
     </BrowserRouter>
   </Provider>
