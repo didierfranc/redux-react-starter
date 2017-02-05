@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { TextField, Submit } from './Styled'
+import { TextField, Submit } from '../Styled'
 
 const Form = ({ onSubmit }) => (
   <form onSubmit={onSubmit}>

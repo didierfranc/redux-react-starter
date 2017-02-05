@@ -1,5 +1,5 @@
 import { actionTypes as types, urls } from '../constants'
-import { getToken, post } from '../helpers'
+import { post } from '../helpers'
 
 export const signup = ({ email, password }) => (dispatch) => {
   dispatch({ type: types.SIGNUP_REQUEST })
@@ -23,12 +23,10 @@ export const login = ({ email, password }) => (dispatch) => {
   })
 }
 
-export const loginWithToken = () => (dispatch) => {
-  const token = getToken()
-  if (!token) {
-    dispatch({ type: types.LOGIN_FAILURE })
-    return
-  }
+export const loginWithToken = () => (dispatch, getState) => {
+  const token = getState().user.token
+
+  if (typeof token === 'undefined') return
 
   dispatch({ type: types.LOGIN_REQUEST })
   post({

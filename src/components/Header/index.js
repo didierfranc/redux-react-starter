@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Title } from './Styled'
+import { Title } from '../Styled'
 import Github from './Github'
 
 const Header = () => (

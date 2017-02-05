@@ -2,32 +2,32 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
 
-import { login } from '../actions'
+import { signup } from '../../actions'
 
-import { FormTitle, FooterLink } from './Styled'
+import { FormTitle, FooterLink } from '../Styled'
 import Form from './Form'
 
-const Login = ({ user, login }) => {
+const Signup = ({ user, signup }) => {
   const handleSubmit = (e) => {
     e.preventDefault()
     const { email: { value: email }, password: { value: password } } = e.target
-    login({ email, password })
+    signup({ email, password })
   }
 
   return (
     <div>
-      <FormTitle>Login</FormTitle>
+      <FormTitle>Sign up</FormTitle>
       <Form onSubmit={handleSubmit} />
-      <FooterLink to="/signup">{'You don\'t have an account ?'}</FooterLink>
+      <FooterLink to="/login">Already have an account ?</FooterLink>
       {user.token && <Redirect to="/" />}
     </div>
   )
 }
 
-Login.propTypes = {
+Signup.propTypes = {
   user: React.PropTypes.shape({}).isRequired,
-  login: React.PropTypes.func.isRequired,
+  signup: React.PropTypes.func.isRequired,
 }
 
 const mapStateToProps = state => ({ user: state.user })
-export default connect(mapStateToProps, { login })(Login)
+export default connect(mapStateToProps, { signup })(Signup)
