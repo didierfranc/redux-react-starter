@@ -52,7 +52,7 @@
   "dependencies": {
     "lodash": "^4.17.4",
     "offline-plugin": "^4.5.5",
-    "react": "^15.4.1",
+    "react": "^15.4.2",
     "react-code-splitting": "^1.0.3",
     "react-dom": "^15.4.1",
     "react-redux": "^5.0.2",
@@ -60,5 +60,73 @@
     "redux": "^3.5.2",
     "redux-thunk": "^2.2.0",
     "styled-components": "^1.4.2"
+  },
+  "babel": {
+    "presets": [
+      [
+        "es2015",
+        {
+          "modules": false
+        }
+      ],
+      "react",
+      "stage-0"
+    ],
+    "plugins": [
+      [
+        "transform-runtime",
+        {
+          "helpers": false,
+          "polyfill": false
+        }
+      ]
+    ],
+    "env": {
+      "development": {
+        "plugins": [
+          "styled-components"
+        ]
+      },
+      "test": {
+        "plugins": [
+          "transform-es2015-modules-commonjs"
+        ]
+      }
+    }
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "jest": true
+    },
+    "extends": "airbnb",
+    "parser": "babel-eslint",
+    "settings": {
+      "import/resolver": {
+        "webpack": {
+          "config": "webpack/webpack.config.dev.js"
+        }
+      }
+    },
+    "rules": {
+      "no-confusing-arrow": 0,
+      "no-shadow": 0,
+      "no-underscore-dangle": 0,
+      "semi": [
+        1,
+        "never"
+      ],
+      "import/no-extraneous-dependencies": 0,
+      "import/prefer-default-export": 0,
+      "import/no-duplicates": 0,
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js"
+          ]
+        }
+      ]
+    }
   }
 }

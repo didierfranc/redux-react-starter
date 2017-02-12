@@ -1,8 +1,0 @@
-{
-  "presets": [["es2015", { "modules": false }], "react", "stage-0"],
-  "plugins": [["transform-runtime", { "helpers": false, "polyfill": false }]],
-  "env": {
-    "development": { "plugins": ["styled-components"] },
-    "test": { "plugins": ["transform-es2015-modules-commonjs"] }
-  }
-}
