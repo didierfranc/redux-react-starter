@@ -9,7 +9,7 @@ import { FormTitle, FooterLink } from '../Styled'
 import Form from './Form'
 
 const Signup = ({ user, signup }) => {
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault()
     const { email: { value: email }, password: { value: password } } = e.target
     signup({ email, password })

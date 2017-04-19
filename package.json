@@ -8,7 +8,14 @@
     "prod": "serve ./dist -s",
     "lint": "eslint src",
     "ngrok": "ngrok http -region eu 8080",
-    "test": "jest"
+    "test": "jest",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write --no-semi --single-quote --trailing-comma all",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -43,7 +50,10 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
     "html-webpack-plugin": "^2.24.1",
+    "husky": "^0.13.3",
     "jest": "^19.0.2",
+    "lint-staged": "^3.4.0",
+    "prettier": "^1.2.2",
     "react-test-renderer": "^15.5.4",
     "serve": "^5.1.4",
     "webpack": "^2.4.1",
@@ -109,6 +119,7 @@
       }
     },
     "rules": {
+      "arrow-parens": ["error", "as-needed"],
       "no-confusing-arrow": 0,
       "no-shadow": 0,
       "no-underscore-dangle": 0,

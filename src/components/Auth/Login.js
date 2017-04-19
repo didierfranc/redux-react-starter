@@ -9,7 +9,7 @@ import { FormTitle, FooterLink } from '../Styled'
 import Form from './Form'
 
 const Login = ({ user, login }) => {
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault()
     const { email: { value: email }, password: { value: password } } = e.target
     login({ email, password })
@@ -19,7 +19,7 @@ const Login = ({ user, login }) => {
     <div>
       <FormTitle>Login</FormTitle>
       <Form onSubmit={handleSubmit} />
-      <FooterLink to="/signup">{'You don\'t have an account ?'}</FooterLink>
+      <FooterLink to="/signup">{"You don't have an account ?"}</FooterLink>
       {user.token && <Redirect to="/" />}
     </div>
   )

@@ -1,7 +1,7 @@
 import { actionTypes as types, urls } from '../constants'
 import { post } from '../helpers'
 
-export const signup = ({ email, password }) => (dispatch) => {
+export const signup = ({ email, password }) => dispatch => {
   dispatch({ type: types.SIGNUP_REQUEST })
   post({
     url: urls.SIGNUP,
@@ -12,7 +12,7 @@ export const signup = ({ email, password }) => (dispatch) => {
   })
 }
 
-export const login = ({ email, password }) => (dispatch) => {
+export const login = ({ email, password }) => dispatch => {
   dispatch({ type: types.LOGIN_REQUEST })
   post({
     url: urls.LOGIN,

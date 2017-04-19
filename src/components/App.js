@@ -14,7 +14,9 @@ const Home = () => <Async load={import('./Home')} />
 const App = ({ user }) => (
   <Body>
     <Header />
-    {user.token ? <Route path="/" component={Home} /> : <Redirect to="/login" />}
+    {user.token
+      ? <Route path="/" component={Home} />
+      : <Redirect to="/login" />}
     <Route path="/signup" component={Signup} />
     <Route path="/login" component={Login} />
   </Body>
