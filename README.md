@@ -51,43 +51,7 @@ Then go to your repository, Settings -> Options -> Github Pages and select /docs
 
 ## What's inside ?
 
-#### Dependencies
-```
-lodash                            4.17.4
-offline-plugin                    4.5.5
-react                             15.4.1
-react-dom                         15.4.1
-react-redux                       5.0.1
-react-router                      4.0.0-alpha.6
-redux                             3.5.2
-redux-thunk                       2.2.0
-styled-components                 1.3.1
-```
-
-```
-babel-core                        6.22.1
-babel-eslint                      7.0.0
-babel-jest                        18.0.0
-babel-loader                      6.2.9
-babel-plugin-styled-components    0.0.3-0
-babel-plugin-transform-runtime    6.22.0
-babel-preset-es2015               6.22.0
-babel-preset-react                6.22.0
-babel-preset-stage-0              6.22.0
-babel-runtime                     6.22.0
-eslint                            3.14.0
-eslint-config-airbnb              14.0.0
-eslint-plugin-babel               4.0.1
-eslint-plugin-import              2.2.0
-eslint-plugin-jsx-a11y            3.0.2
-eslint-plugin-react               6.8.0
-html-webpack-plugin               2.24.1
-jest                              18.0.0
-react-hot-loader                  3.0.0-beta.6
-react-test-renderer               15.4.1
-webpack                           2.2.0
-webpack-dev-server                2.2.0-rc.0
-```
+👉 [package.json](https://github.com/didierfranc/redux-react-starter/blob/master/package.json)
 
 ## Tools
 

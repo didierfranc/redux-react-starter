@@ -1,11 +1,15 @@
-exports[`test Properly render Github component 1`] = `
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Properly render Github component 1`] = `
 <a
   className="fqGhMB"
   href="http://github.com/didierfranc/redux-react-starter"
   rel="noopener"
-  target="_blank">
+  target="_blank"
+>
   <span
-    className="fGNCqT">
+    className="fGNCqT"
+  >
     <svg
       height="16"
       style={
@@ -14,14 +18,17 @@ exports[`test Properly render Github component 1`] = `
           "top": 3,
         }
       }
-      width="14">
+      width="14"
+    >
       <path
-        d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z" />
+        d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74z"
+      />
     </svg>
      Star
   </span>
   <span
-    className="jzeXcL">
+    className="jzeXcL"
+  >
     0
   </span>
 </a>
