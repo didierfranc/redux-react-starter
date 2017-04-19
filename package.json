@@ -52,9 +52,9 @@
   "dependencies": {
     "lodash": "^4.17.4",
     "offline-plugin": "^4.5.5",
-    "react": "^15.4.2",
-    "react-code-splitting": "^1.0.3",
-    "react-dom": "^15.4.1",
+    "react": "^15.5.4",
+    "react-code-splitting": "^1.1.1",
+    "react-dom": "^15.5.4",
     "react-redux": "^5.0.2",
     "react-router-dom": "4.0.0-beta.3",
     "redux": "^3.5.2",

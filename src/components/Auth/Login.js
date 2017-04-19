@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
 
@@ -25,8 +26,8 @@ const Login = ({ user, login }) => {
 }
 
 Login.propTypes = {
-  user: React.PropTypes.shape({}).isRequired,
-  login: React.PropTypes.func.isRequired,
+  user: PropTypes.shape({}).isRequired,
+  login: PropTypes.func.isRequired,
 }
 
 const mapStateToProps = state => ({ user: state.user })

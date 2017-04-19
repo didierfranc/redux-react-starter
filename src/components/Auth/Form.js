@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import { TextField, Submit } from '../Styled'
 
@@ -24,7 +25,7 @@ const Form = ({ onSubmit }) => (
 )
 
 Form.propTypes = {
-  onSubmit: React.PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired,
 }
 
 export default Form

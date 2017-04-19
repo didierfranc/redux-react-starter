@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
 
@@ -11,7 +12,7 @@ const Home = ({ user }) => (
 )
 
 Home.propTypes = {
-  user: React.PropTypes.shape({}).isRequired,
+  user: PropTypes.shape({}).isRequired,
 }
 
 export default connect(state => ({ user: state.user }))(Home)

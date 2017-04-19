@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { Route, Redirect } from 'react-router-dom'
 import Async from 'react-code-splitting'
@@ -20,7 +21,7 @@ const App = ({ user }) => (
 )
 
 App.propTypes = {
-  user: React.PropTypes.shape({}).isRequired,
+  user: PropTypes.shape({}).isRequired,
 }
 
 export default connect(state => ({ user: state.user }))(App)
