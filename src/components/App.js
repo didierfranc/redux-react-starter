@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import { Route, Redirect } from 'react-router-dom'
+import { Route, Redirect, withRouter } from 'react-router-dom'
 import Async from 'react-code-splitting'
 
 import Login from './Auth/Login'
@@ -26,4 +26,4 @@ App.propTypes = {
   user: PropTypes.shape({}).isRequired,
 }
 
-export default connect(state => ({ user: state.user }))(App)
+export default withRouter(connect(state => ({ user: state.user }))(App))

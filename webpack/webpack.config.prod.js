@@ -13,7 +13,6 @@ module.exports = {
       'react-router-dom',
       'redux',
       'redux-thunk',
-      'styled-components',
     ],
   },
   output: {
