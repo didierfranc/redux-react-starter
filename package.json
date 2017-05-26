@@ -62,9 +62,9 @@
   "dependencies": {
     "lodash": "^4.17.4",
     "offline-plugin": "^4.7.0",
-    "react": "next",
+    "preact": "^8.1.0",
+    "preact-compat": "^3.16.0",
     "react-code-splitting": "^1.1.1",
-    "react-dom": "next",
     "react-redux": "^5.0.4",
     "react-router-dom": "^4.1.1",
     "react-sc": "^0.2.1",

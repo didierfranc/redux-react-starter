@@ -5,16 +5,15 @@ const OfflinePlugin = require('offline-plugin')
 const PreloadWebpackPlugin = require('preload-webpack-plugin')
 
 module.exports = {
+  resolve: {
+    alias: {
+      react: 'preact-compat',
+      'react-dom': 'preact-compat',
+    },
+  },
   entry: {
     main: resolve(__dirname, '../src'),
-    vendor: [
-      'react',
-      'react-dom',
-      'react-redux',
-      'react-router-dom',
-      'redux',
-      'redux-thunk',
-    ],
+    vendor: ['react-redux', 'react-router-dom', 'redux', 'redux-thunk'],
   },
   output: {
     filename: '[name].[chunkhash].js',
