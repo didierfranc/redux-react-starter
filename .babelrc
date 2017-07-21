@@ -1,0 +1,32 @@
+{
+  "presets": [
+    [
+      "es2015",
+      {
+        "modules": false
+      }
+    ],
+    "react",
+    "stage-0"
+  ],
+  "plugins": [
+    [
+      "emotion/babel", {
+        "inline": true
+      }
+    ],
+    [
+      "transform-runtime", {
+        "helpers": false,
+        "polyfill": false
+      },
+    ]
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        "transform-es2015-modules-commonjs"
+      ]
+    }
+  }
+}

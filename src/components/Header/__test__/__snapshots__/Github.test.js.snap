@@ -2,13 +2,13 @@
 
 exports[`Properly render Github component 1`] = `
 <a
-  className="NjAzsK"
+  className="css-GithubLink-1lpdutp-qkdrtp css-GithubLink-1lpdutp"
   href="http://github.com/didierfranc/redux-react-starter"
   rel="noopener"
   target="_blank"
 >
   <span
-    className="TE3H0K TcxjsK"
+    className="css-Github-10s59s4-1w9fjgc css-Github-10s59s4 css-GithubButton-g8y01v-1nq7cqd css-GithubButton-g8y01v"
   >
     <svg
       height="16"
@@ -27,7 +27,7 @@ exports[`Properly render Github component 1`] = `
      Star
   </span>
   <span
-    className="Njc4Cg TcxjsK"
+    className="css-Github-10s59s4-1w9fjgc css-Github-10s59s4 css-GithubCount-lcp6b7-1tsdg4m css-GithubCount-lcp6b7"
   >
     0
   </span>

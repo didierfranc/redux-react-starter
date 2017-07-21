@@ -14,6 +14,7 @@ module.exports = {
       'react-router-dom',
       'redux',
       'redux-thunk',
+      'emotion',
     ],
   },
   output: {

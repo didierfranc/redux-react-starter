@@ -1,4 +1,4 @@
-import styled from 'react-sc'
+import styled from 'emotion/react'
 import { Link } from 'react-router-dom'
 
 export const Body = styled.div`
@@ -45,12 +45,10 @@ export const GithubLink = styled.a`
 export const Message = styled.h2`
   font-family: sans-serif;
   font-weight: 100;
-  margin-top: 30vh
+  margin-top: 30vh;
 `
 
-export const Blue = styled.span`
-  color: rgb(0, 128, 255)
-`
+export const Blue = styled.span`color: rgb(0, 128, 255);`
 
 export const FormTitle = styled.h1`
   font-family: sans-serif;
