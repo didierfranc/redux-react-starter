@@ -19,7 +19,9 @@ class Github extends React.Component {
       target="_blank"
       rel="noopener"
     >
-      <GithubButton><Star /> Star</GithubButton>
+      <GithubButton>
+        <Star /> Star
+      </GithubButton>
       <GithubCount>{this.state.count}</GithubCount>
     </GithubLink>
   )

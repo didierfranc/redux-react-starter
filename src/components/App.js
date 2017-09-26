@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import { Route, Redirect, withRouter } from 'react-router-dom'
+import { Route, Redirect, withRouter, Switch } from 'react-router-dom'
 import Async from 'react-code-splitting'
 
 import Login from './Auth/Login'
@@ -14,11 +14,12 @@ const Home = () => <Async load={import('./Home')} />
 const App = ({ user }) => (
   <Body>
     <Header />
-    {user.token
-      ? <Route path="/" component={Home} />
-      : <Redirect to="/login" />}
-    <Route path="/signup" component={Signup} />
-    <Route path="/login" component={Login} />
+    <Switch>
+      {user.token && <Route path="/" component={Home} />}
+      <Route path="/signup" component={Signup} />
+      <Route path="/login" component={Login} />
+      <Redirect to="/login" />
+    </Switch>
   </Body>
 )
 

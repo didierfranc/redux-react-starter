@@ -33,7 +33,7 @@ export const GithubButton = styled(Github)`
 export const GithubCount = styled(Github)`
   margin-left: -1px;
   border-radius: 0 3px 3px 0;
-  width: 100px
+  width: 100px;
 `
 
 export const GithubLink = styled.a`
