@@ -5,6 +5,13 @@ export const Body = styled.div`
   text-align: center;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 `
+export const Head = styled.div`
+  border: none;
+  background-color: #3a7bd5;
+  height: 65px;
+  width: 100%;
+  z-index: 20;
+`
 
 export const Title = styled.h1`
   font-family: sans-serif;

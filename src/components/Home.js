@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+// import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { Redirect } from 'react-router-dom'
 
@@ -10,6 +11,9 @@ const Home = ({ user }) =>
     <Message>
       {"You're logged in as "}
       <Blue>{user.email}</Blue>
+      <a href="/login">
+        <button onClick={localStorage.clear()}>logout</button>
+      </a>
     </Message>
   ) : (
     <Redirect to="/login" />
